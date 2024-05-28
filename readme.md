@@ -1,6 +1,6 @@
 # Practice 
 
-In this exercise, you will create API endpoints to insert a new category and retrieve a furniture record based on categoryid. Follow the instructions below: 
+In this exercise, you will update API endpoints to add on bcrypt functionality for registration and login. Follow the instructions below: 
 
 ## Instructions
 
@@ -90,6 +90,8 @@ In this exercise, you will create API endpoints to insert a new category and ret
       jwtMiddleware.generateToken:
    
       This middleware generates a JWT token using the user's information stored in res.locals. The token is signed using the secret key and configured options.
+
+   
       jwtMiddleware.sendToken:
       This middleware sends the generated JWT token in the response along with a success message.
 
