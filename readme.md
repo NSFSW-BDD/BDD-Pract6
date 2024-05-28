@@ -100,6 +100,7 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
       Return a JWT token if the username and password match.
       
       Input JSON:
+
       username: the username of the user
       password: the password of the user
 
@@ -113,6 +114,7 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
       Return an error if the username or password is incorrect.
       
       Input JSON:
+   
       username: a nonexistent username
       password: an incorrect password
 
