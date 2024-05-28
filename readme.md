@@ -38,7 +38,8 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
    
       Route: /user/register
 
-      Controller Functions:
+      **Controller Functions:**
+   
       bcryptMiddleware.hashPassword:
       This middleware hashes the password provided in the request body using bcrypt and the specified number of salt rounds. The hashed password is stored in res.locals.hash for later use.
 
@@ -78,7 +79,7 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
    
       Route: /user/login
 
-      Controller Functions:
+      **Controller Functions:**
    
       userController.loginUser: 
 
