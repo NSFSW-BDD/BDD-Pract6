@@ -102,6 +102,7 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
       Input JSON:
 
       username: the username of the user
+
       password: the password of the user
 
       Output:
@@ -116,6 +117,7 @@ In this exercise, you will update API endpoints to add on bcrypt functionality f
       Input JSON:
    
       username: a nonexistent username
+
       password: an incorrect password
 
       Output:
