@@ -32,7 +32,7 @@ In this exercise, you will create API endpoints to insert a new category and ret
 
       router.post("/register", userController.checkUsernameOrEmailExist, bcryptMiddleware.hashPassword, userController.register, jwtMiddleware.generateToken, jwtMiddleware.sendToken);
 
-      Specifications:
+      **Specifications:**
       
       HTTP Method: POST
    
@@ -51,7 +51,7 @@ In this exercise, you will create API endpoints to insert a new category and ret
       jwtMiddleware.sendToken:
       This middleware sends the generated JWT token in the response along with a success message.
 
-      Requirement: 
+      **Requirement:** 
       Create a new user with a unique username and email.
       
       Input JSON:
@@ -72,7 +72,7 @@ In this exercise, you will create API endpoints to insert a new category and ret
 
       router.post("/login", userController.loginUser, bcryptMiddleware.comparePassword, jwtMiddleware.generateToken, jwtMiddleware.sendToken);
 
-      Specifications:
+      **Specifications:**
 
       HTTP Method: POST
    
@@ -93,7 +93,7 @@ In this exercise, you will create API endpoints to insert a new category and ret
       jwtMiddleware.sendToken:
       This middleware sends the generated JWT token in the response along with a success message.
 
-      Requirement A:
+      **Requirement 1:**
       Return a JWT token if the username and password match.
       
       Input JSON:
@@ -106,7 +106,7 @@ In this exercise, you will create API endpoints to insert a new category and ret
       JSON body:
       token: a JWT token
 
-      Requirement B:
+      **Requirement 2:**
       Return an error if the username or password is incorrect.
       
       Input JSON:
